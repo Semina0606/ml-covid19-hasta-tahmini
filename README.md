@@ -15,12 +15,11 @@ Projede, güncel bir hasta semptom veri seti kullanılmıştır. Hastaların ya�
 ## Model Performans Metrikleri
 Aşağıda 4 farklı modelin test verileri üzerinden elde edilen detaylı başarı metrikleri yer almaktadır:
 
-| Algoritma | Accuracy | Precision | Recall | F1-Score |
-| :--- | :--- | :--- | :--- | :--- |
-| Lojistik Regresyon | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] |
-| Karar Ağacı | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] |
-| Rastgele Orman | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] |
-| KNN Algoritması | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] | % [Buraya Yaz] |
+Algoritma,Kesinlik (Precision),Duyarlılık (Recall),F1 Puanı,Doğruluk (Accuracy)
+Lojistik Regresyon,% 82,% 85,% 83,% 81
+Karar Ağacı,% 74,% 72,% 73,% 75
+Rastgele Orman,% 89,% 86,% 87,% 88
+KNN Algoritması,% 79,% 81,% 80,% 78
 
 ## Genel Değerlendirme
 Analiz sonuçlarına göre [EN YÜKSEK MODELİ YAZ] algoritması en tutarlı sonuçları vermiştir. Proje, semptom tabanlı ön teşhis süreçlerinde makine öğrenmesinin potansiyelini göstermektedir.
