@@ -17,6 +17,11 @@ Cough (Öksürük): Öksürük şiddeti (Şiddetli/Hafif).
 Hedef Değişken (Etiket):
 Has_Covid: Hastanın COVID-19 testi sonucunun pozitif (Yes) veya negatif (No) olma durumu.
 
+## Veri Ön İşleme Adımları
+Geçersiz Değerlerin Temizlenmesi: Veri setinde "bilinmiyor" anlamına gelen maskelenmiş değerler (97, 98, 99) NaN olarak işaretlenmiş ve bu satırlar veri setinden çıkarılmıştır.
+Hedef Değişken Oluşturma: CLASIFFICATION_FINAL sütunu baz alınarak; 1, 2 ve 3 değerleri "Pozitif (1)", diğer değerler (4, 5, 6, 7) "Negatif (0)" olacak şekilde ikili sınıflandırmaya (binary classification) dönüştürülmüştür.
+Gereksiz Sütunların Kaldırılması: Tahminleme sürecine doğrudan etkisi olmayan ve RAM yükünü artıran DATE_DIED gibi sütunlar veri setinden düşürülmüştür.
+Veri Bölme: Veri seti %80 eğitim ve %20 test olacak şekilde ayrılmıştır.
 
 ## Veri Ön İşleme (EDA) Süreci
 - Veri setindeki boş değerler temizlenmiş ve veri bütünlüğü sağlanmıştır.
